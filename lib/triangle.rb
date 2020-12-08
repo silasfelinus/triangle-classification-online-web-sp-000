@@ -9,9 +9,9 @@ class Triangle
 
   def kind
     triangle_kind = :unknown
-    if @size1 == @size2 && @size2 == @size3
+    if @side1 == @side2 && @side2 == @side3
       triangle_kind = :equilateral
-    elsif (@size1 == @size2 || @size2 == @size3 || @size1 == @size3) && !(@size1 == @size2 && @size2 == @size3)
+    elsif (@side1 == @side2 || @side2 == @side3 || @side1 == @side3) && !(@side1 == @side2 && @side2 == @side3)
       triangle_kind = :isosceles
     else
       triangle_kind = :scalene
