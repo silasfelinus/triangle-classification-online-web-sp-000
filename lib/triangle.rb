@@ -17,17 +17,13 @@ class Triangle
       triangle_kind = :scalene
     end
     if side1 == 0 || side2 == 0 || side3 == 0
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
+      raise TriangleError
     end
     triangle_kind
   end
 
 
   class TriangleError < StandardError
-    # triangle error code
+    1
   end
 end
